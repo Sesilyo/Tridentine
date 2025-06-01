@@ -1,0 +1,52 @@
+html, body {
+    background-color: #faf8f0;
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+    color: #2e2e2e;
+}
+
+#sidebar {
+    background-color: #dadada;
+}
+
+#main-container {
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+  align-content: start;
+  padding: 1%;
+}
+
+.section {
+    border-radius: 12px;
+    padding: 1em;
+    box-shadow: 0 0 0 2px #00000010;
+    background-color: #ffffff;
+}
+
+#header, footer {
+  width: 100%;
+  border: 1px solid #dadada;
+  background-color: #faf8f0;
+}
+
+#title-tridentine {
+    color: #7c0a02;
+    font-size: 4em;
+}
+
+.text-header {
+    margin-top: 0.02em;
+    margin-bottom: 0.02em;
+    line-height: 1.2;
+}
+
+#sidebar {
+  width: 25%;
+  background-color: #dadada;
+}
+
+#content {
+  flex-grow: 1;
+  background-color: #ffffff;
+}
