@@ -11,6 +11,7 @@ html, body {
 
 #main-container {
   display: flex;
+  min-height: 80vh;
   gap: 2%;
   flex-wrap: wrap;
   align-content: start;
@@ -20,6 +21,7 @@ html, body {
 .section {
     border-radius: 12px;
     padding: 1em;
+    box-sizing: border-box;
     box-shadow: 0 0 0 2px #00000010;
     background-color: #ffffff;
 }
@@ -28,6 +30,7 @@ html, body {
   width: 100%;
   border: 1px solid #dadada;
   background-color: #faf8f0;
+  text-align: center;
 }
 
 #title-tridentine {
@@ -41,9 +44,23 @@ html, body {
     line-height: 1.2;
 }
 
+#body-wrapper {
+  display: flex;
+  min-height: 80vh;
+}
+
 #sidebar {
   width: 25%;
+  min-width: 200px;
+  word-wrap: break-word;
   background-color: #dadada;
+  padding: 1em;
+  height: 100%;
+}
+
+#sidebar li {
+  pad: 0.5em 0;
+  text-overflow: ellipsis;
 }
 
 #content {
