@@ -1,4 +1,4 @@
-fetch('external_pages/introduction.html')
+fetch('pages/external_pages/introduction.html')
     .then(response => response.text())
     .then(html => {
         document.getElementById('content').innerHTML = html;
