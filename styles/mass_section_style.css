@@ -1,0 +1,34 @@
+.mass-section {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.la-column, .en-column {
+    width: 50%;
+    text-align: justify;
+}
+
+.section-heading {
+    font-variant: small-caps;
+    color: #7C0A02;
+    margin-bottom: 1rem;
+}
+
+.rubric {
+    color: #7C0A02;
+    font-style: italic;
+}
+
+.sign-of-the-cross {
+    color: #7C0A02;
+}
+
+@media (max-width: 768px) {
+    .mass-section {
+        flex-direction: column;
+    }
+    .la-column, .en-column {
+        width: 100%;
+    }
+}
