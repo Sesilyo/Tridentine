@@ -15,10 +15,8 @@ html, body {
 }
 
 .section {
-  border-radius: 12px;
   padding: 1em;
   box-sizing: border-box;
-  box-shadow: 0 0 0 2px #00000010;
   background-color: #ffffff;
 }
 
@@ -27,6 +25,11 @@ html, body {
   border: 1px solid #dadada;
   background-color: #faf8f0;
   text-align: center;
+}
+
+#header {
+  margin-bottom: 2rem;
+  border-bottom: 10px solid #7c0a02
 }
 
 #title-tridentine {
@@ -43,6 +46,8 @@ html, body {
 #body-wrapper {
   display: flex;
   min-height: 80vh;
+  box-shadow: 0 0 0 2px #00000010;
+  margin-bottom: 2rem;
 }
 
 #sidebar {
@@ -51,16 +56,94 @@ html, body {
   word-wrap: break-word;
   color: #faf8f0;
   background-color: #7c0a02;
-  padding: 1em;
+  padding: 1rem;
   height: 100%;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 5px;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
-#sidebar li {
-  pad: 0.5em 0;
+#sidebar .nav-button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0.5em 1rem;
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: #faf8f0;
+  cursor: pointer;
   text-overflow: ellipsis;
+  border-radius: 2px;
+  border-left: 3px solid transparent;
+  transition: background-color 0.3s;
+  word-wrap: break-word;
+}
+
+#sidebar .nav-button:hover {
+  border-left: 3px solid #faf8f0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#sidebar .nav-button:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#sidebar .nav-button:focus {
+  outline: 2px solid #faf8f0;
+  outline-offset: 2px;
+}
+
+#sidebar .nav-button.link-button {
+  color: #faf8f0;
+  text-decoration: underline;
+}
+
+#sidebar .nav-button.link-button:hover {
+  color: #ffffff;
+}
+
+#sidebar .nav-button.indented {
+  margin-left: 1em;
+  padding-left: 1.5rem;
+}
+
+#sidebar .nav-button.disabled {
+  color: rgba(250, 248, 240, 0.6);
+  cursor: default;
+}
+
+#sidebar .nav-button.disabled:hover {
+  border-left: 3px solid transparent;
+  background-color: transparent;
+}
+
+#sidebar p {
+  padding: 0.5em 1rem;
+  text-overflow: ellipsis;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-radius: 2px;
+  border-bottom: solid;
 }
 
 #content {
   flex-grow: 1;
   background-color: #ffffff;
+}
+
+.la-column {
+  border-right: 1px solid #e0e0e0;
+  padding-right: 1em;
+}
+
+.mass-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }

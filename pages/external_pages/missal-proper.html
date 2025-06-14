@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/index.css">
-    <link rel="stylesheet" href="/styles/mass_section_style.css">
+    <link rel="stylesheet" href="index.css">
     <title>Tridentine Mass</title>
 </head>
 <body>
@@ -19,17 +18,23 @@
 
         <div id="body-wrapper">
             <nav id="sidebar" class="section">
-                <ul>
-                    <li>What is the Tridentine Mass?</li>
-                    <li>How to use this Web Page?</li>
-                    <li>The Mass
-                        <ul>
-                            <li>Mass of the Catechumens</li>
-                            <li>Mass of the Faithful</li>
-                        </ul>
-                    </li>
-                    <li>Parts of the Mass</li>
-                </ul>
+                <button class="nav-button" onclick="handleNavigation('what-is-tridentine')">
+                    What is the Tridentine Mass?
+                </button>
+                
+                <button class="nav-button" onclick="handleNavigation('how-to-use')">
+                    How to use this Web Page?
+                </button>
+                
+                <p>The Mass</p>
+                
+                <button class="nav-button indented link-button" onclick="handleNavigation('/pages/external_pages/missal-proper.html')">
+                    ✠ Mass of the Catechumens
+                </button>
+                
+                <button class="nav-button indented link-button" onclick="handleNavigation('mass-faithful')">
+                    ✠ Mass of the Faithful
+                </button>
             </nav>
     
             <main id="content" class="section">
@@ -46,8 +51,8 @@
             </main>
         </div>
         
-        <footer id="footer"  class="section">Footer</footer>
-        <script src="/test.js"></script>
+        <footer id="footer" class="section">Ave Christus Rex</footer>
+        <script src="index.js"></script>
     </div>
 </body>
 </html>

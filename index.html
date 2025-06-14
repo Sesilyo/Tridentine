@@ -18,17 +18,23 @@
 
         <div id="body-wrapper">
             <nav id="sidebar" class="section">
-                <ul>
-                    <li>What is the Tridentine Mass?</li>
-                    <li>How to use this Web Page?</li>
-                    <li>The Mass
-                        <ul>
-                            <li><a href="/pages/external_pages/missal-proper.html">Mass of the Catechumens</a></li>
-                            <li>Mass of the Faithful</li>
-                        </ul>
-                    </li>
-                    <li>Parts of the Mass</li>
-                </ul>
+                <button class="nav-button" onclick="handleNavigation('what-is-tridentine')">
+                    What is the Tridentine Mass?
+                </button>
+                
+                <button class="nav-button" onclick="handleNavigation('how-to-use')">
+                    How to use this Web Page?
+                </button>
+                
+                <p>The Mass</p>
+                
+                <button class="nav-button indented link-button" onclick="handleNavigation('/pages/external_pages/missal-proper.html')">
+                    ✠ Mass of the Catechumens
+                </button>
+                
+                <button class="nav-button indented link-button" onclick="handleNavigation('mass-faithful')">
+                    ✠ Mass of the Faithful
+                </button>
             </nav>
     
             <main   id="content" class="section">
@@ -36,7 +42,7 @@
             </main>
         </div>
         
-        <footer id="footer"  class="section">Footer</footer>
+        <footer id="footer" class="section">Ave Christus Rex</footer>
         <script src="index.js"></script>
     </div>
 </body>
